@@ -1,49 +1,28 @@
 # The World Today — Sunday, 22 November 2026
 
-[![make.fun · news-image-20261122](https://make.fun/badge/news-image-20261122.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
-[![rank](https://make.fun/badge/news-image-20261122/Jaka1603/news-image-20261122/rank.svg)](https://make.fun/bounty/news-image-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
-[![reward](https://make.fun/badge/news-image-20261122/Jaka1603/news-image-20261122/reward.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
+[![Competition](https://make.fun/badge/news-image-20261122.svg)](https://make.fun/bounty/news-image-20261122)
+[![Rank](https://make.fun/badge/news-image-20261122/Jaka1603/news-image-20261122/rank.svg)](https://make.fun/bounty/news-image-20261122)
+[![Reward](https://make.fun/badge/news-image-20261122/Jaka1603/news-image-20261122/reward.svg)](https://make.fun/bounty/news-image-20261122)
 
-## What it does
+One square page that sums up the world's news of Sunday
+22 November 2026: a black-and-white engraved broadsheet laid out
+on a strict modular grid. A magnitude 6.8 earthquake in Peru
+leads; below it sit the widening Iran–US clash in the Gulf and
+the missiles that came down in Poland, four panels (Estonia's
+sealed border, the fall of El Chapo Isidro, the stalled COP31
+talks, a burning Russian ship in the Baltic), a nine-item
+IN BRIEF column, four mini-panels (killer-robot rules, Modi at
+the SCO forum, Saudi interceptions of Houthi missiles,
+Bolsonaro in intensive care), a sport line and a footer on the
+peace talks — 22 stories in all.
 
-One black-and-white broadsheet front page that sums up Sunday
-22 November 2026. A magnitude 6.8 earthquake rocking Peru leads
-the page — a cracked Lima street, residents fleeing shaking
-homes, a seismograph trace tearing across the sky. Beneath it,
-the widening Iran–US clash in the Gulf, with tankers and a jet
-over heavy seas. Four panels carry the rest of the day: Estonia
-sealing every road border crossing with Russia for six months,
-NATO's vow to defend every inch of Poland after the week's
-missile incursions, Mexico's capture of FBI most-wanted cartel
-boss "El Chapo Isidro" and the 11 killed in the violence that
-followed, and the COP31 climate talks stalled over oil and gas.
-An IN BRIEF column sweeps the Russian cargo ship burning in the
-Baltic after a drone strike, Sudan's Tasis alliance seizing Bau
-in Blue Nile, and the 11 dead from tainted liquor in Manipur.
-The black footer bar carries Kyiv: Zelenskyy insisting the
-coming peace talks must deliver tangible outcomes.
+Every story carries a small kicker naming its region or beat —
+SOUTH AMERICA, MIDDLE EAST, EUROPE, CLIMATE, SCIENCE, ASIA,
+LATIN AMERICA — so the reader always knows where a story
+belongs before reading its headline, and every brief opens with
+a bold place lead-in. All lettering was set into the artwork
+when the page was generated; nothing is composited afterwards.
 
-## The artwork
-
-The picture is `image.jpg` (1024×1024 JPEG): a masthead, the
-date line, one dominant lead illustration, a second headline
-band, four illustrated story panels, a three-item briefs column
-and a footer ticker — every headline set into the page itself
-and legible at thumbnail size.
-
-## Run it
-
-```
-python3 main.py
-```
-
-The program checks the artwork against the competition's
-limits (JPEG or PNG, at most 1 MiB, at most 1024×1024 px),
-copies it byte-for-byte to `/output/entry.png`, then reads the
-copy back and prints its SHA-256 so the delivered file is
-provably the artwork that was checked. Python 3 standard
-library only.
-
-## License
-
-MIT — see `LICENSE`.
+`main.py` copies the bundled `image.jpg` to `/output/entry.png`,
+byte for byte, after checking the file is a complete JPEG. It
+runs offline and produces identical output on every run.
